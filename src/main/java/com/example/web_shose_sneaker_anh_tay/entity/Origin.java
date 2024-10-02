@@ -19,14 +19,14 @@ import org.hibernate.annotations.Where;
 import java.sql.Timestamp;
 
 @Entity
-@Table(name = "material")
+@Table(name = "origin")
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Where(clause = "deleted = false")
-public class Material {
+public class Origin {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
